@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    width: 100%;
+    max-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    text-align: center;
+    margin: 50px auto 0px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 20px;
+    height: 470px;
+    padding: 20px 15px;
+    background: rgb(0,255,166);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-engine{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.search{
+    width: 70%;
+    padding: 10px;
+    color: gray;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+    border: none;
+    padding: 10px 10px;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
 }
+
+.btn:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.loading{
+   font-size: 2rem;
+   font-weight: 800;
+   text-align: center;
+   margin-top: 5rem;
+}
+
+.city-name{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.data{
+    font-size: 1rem;
+    margin: 1rem;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+.temp{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.temp p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.weather-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.weather-info .speed, .humidity p{
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
+@media screen and (width:500px) {
+    .btn{
+        padding: 7px 5px;
+    }
+}
+
